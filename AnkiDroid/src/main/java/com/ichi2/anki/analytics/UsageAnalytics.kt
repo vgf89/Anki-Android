@@ -464,6 +464,7 @@ object UsageAnalytics {
         "keepScreenOn", // Disable screen timeout
         "newTimezoneHandling", // New timezone handling
         "doubleTapTimeInterval", // Double tap time interval (milliseconds)
+        "hideHardEasyButtons", // Hide Hard and Easy buttons
         // Sync
         "syncFetchMedia", // Fetch media on sync
         "automaticSyncMode", // Automatic synchronization

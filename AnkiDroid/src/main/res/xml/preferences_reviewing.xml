@@ -98,5 +98,9 @@
             android:title="@string/pref_double_tap_time_interval"
             app:min="0"
             app:max="2000" />
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="@string/hide_hard_easy_preference"
+            android:title="@string/hide_hard_easy" />
     </PreferenceCategory>
 </PreferenceScreen>

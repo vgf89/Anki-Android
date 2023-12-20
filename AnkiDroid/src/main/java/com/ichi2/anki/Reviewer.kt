@@ -919,6 +919,12 @@ open class Reviewer :
         easeButton4!!.setVisibility(View.VISIBLE)
         easeButton3!!.requestFocus()
 
+        // Hide Hard and Easy buttons
+        if (mHideHardEasyButtons) {
+            easeButton2!!.setVisibility(View.GONE)
+            easeButton4!!.setVisibility(View.GONE)
+        }
+
         // Show next review time
         if (shouldShowNextReviewTime()) {
             val state = queueState!!

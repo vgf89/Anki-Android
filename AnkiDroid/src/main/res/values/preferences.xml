@@ -20,6 +20,7 @@
     <string name="keep_screen_on_preference">keepScreenOn</string>
     <string name="new_timezone_handling_preference">newTimezoneHandling</string>
     <string name="double_tap_time_interval_preference">doubleTapTimeInterval</string>
+    <string name="hide_hard_easy_preference">hideHardEasyButtons</string>
     <!-- Sync -->
     <string name="pref_sync_screen_key">syncScreen</string>
     <string name="sync_account_key">syncAccount</string>

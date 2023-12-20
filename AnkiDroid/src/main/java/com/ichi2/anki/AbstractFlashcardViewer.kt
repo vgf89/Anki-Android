@@ -154,6 +154,7 @@ abstract class AbstractFlashcardViewer :
     private var mLargeAnswerButtons = false
     protected var mAnswerButtonsPosition: String? = "bottom"
     private var mDoubleTapTimeInterval = DEFAULT_DOUBLE_TAP_TIME_INTERVAL
+    protected var mHideHardEasyButtons = false
 
     // Android WebView
     var automaticAnswer = AutomaticAnswer.defaultInstance(this)
@@ -1275,6 +1276,7 @@ abstract class AbstractFlashcardViewer :
         mLargeAnswerButtons = preferences.getBoolean("showLargeAnswerButtons", false)
         mDoubleTapTimeInterval =
             preferences.getInt(DOUBLE_TAP_TIME_INTERVAL, DEFAULT_DOUBLE_TAP_TIME_INTERVAL)
+        mHideHardEasyButtons = preferences.getBoolean("hideHardEasyButtons", false)
         mExitViaDoubleTapBack = preferences.getBoolean("exitViaDoubleTapBack", false)
         mGesturesEnabled = preferences.getBoolean(GestureProcessor.PREF_KEY, false)
         if (mGesturesEnabled) {
